@@ -22,7 +22,7 @@
 - id: prettier-xacro
   name: prettier xacro
   description: Apply Prettier with plugin-xml to xacro.
-  entry: prettier --write --list-different --ignore-unknown --print-width 200 --xml-self-closing-space false --xml-whitespace-sensitivity ignore
+  entry: prettier --write --list-different --ignore-unknown --print-width 200 --xml-self-closing-space false --xml-whitespace-sensitivity ignore --single-attribute-per-line true
   language: node
   files: .xacro$
   additional_dependencies: [prettier@2.8.7, "@prettier/plugin-xml@2.2.0"]
